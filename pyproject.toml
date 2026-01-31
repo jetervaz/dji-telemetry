@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dji-telemetry"
+version = "1.0.0"
+description = "Parse DJI drone SRT telemetry files and overlay flight data onto video footage"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "jetervaz"}
+]
+keywords = ["dji", "drone", "telemetry", "video", "overlay", "gpx", "srt"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "opencv-python>=4.5.0",
+    "numpy>=1.19.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+]
+
+[project.scripts]
+dji-telemetry = "cli:main"
+
+[project.urls]
+Homepage = "https://github.com/jetervaz/dji-telemetry"
+Repository = "https://github.com/jetervaz/dji-telemetry"
+Issues = "https://github.com/jetervaz/dji-telemetry/issues"
+
+[tool.setuptools.packages.find]
+include = ["dji_telemetry*"]
