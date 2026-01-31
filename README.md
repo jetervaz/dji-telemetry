@@ -263,4 +263,4 @@ DJI drones generate SRT files with per-frame telemetry:
 
 ## License
 
-MIT License
+This project is licensed under the [MIT License](LICENSE).
