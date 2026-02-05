@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dji-telemetry"
-version = "1.0.0"
+version = "1.0.1"
 description = "Parse DJI drone SRT telemetry files and overlay flight data onto video footage"
 readme = "README.md"
 license = {text = "MIT"}
@@ -40,7 +40,7 @@ dev = [
 ]
 
 [project.scripts]
-dji-telemetry = "cli:main"
+dji-telemetry = "dji_telemetry.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/jetervaz/dji-telemetry"

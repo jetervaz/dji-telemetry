@@ -22,7 +22,7 @@ Export telemetry data:
     export(telemetry, 'telemetry.gpx')
 """
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 # Core parser
 from .parser import (
